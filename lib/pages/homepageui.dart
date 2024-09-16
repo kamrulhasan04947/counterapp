@@ -42,10 +42,10 @@ class _HomePageUIState extends State<HomePageUI> {
               child: FloatingActionButton(
                 onPressed: () {
                   setState(() {
-                    counter = counter-1;
+                    counter = counter+1;
                   });
                 },
-                child: const Icon(Icons.remove),
+                child: const Icon(Icons.add),
               ),
             ),
             const Expanded(child: SizedBox(
@@ -55,10 +55,10 @@ class _HomePageUIState extends State<HomePageUI> {
               child: FloatingActionButton(
                 onPressed: () {
                   setState(() {
-                    counter = counter+1;
+                    counter = counter-1;
                   });
                 },
-                child: const Icon(Icons.add),
+                child: const Icon(Icons.remove),
               ),
             ),
           ],
